@@ -1,0 +1,6 @@
+{
+    "*.{js,jsx,ts,tsx}": [
+        "eslint --fix",
+        "npx jest --bail --findRelatedTests"
+    ]
+}
