@@ -12,6 +12,8 @@
     "prepare": "if [ \"$NODE_ENV\" != \"production\" ]; then husky install; fi"
   },
   "dependencies": {
+    "@clerk/nextjs": "^4.22.0",
+    "@headlessui/react": "^1.7.15",
     "next": "13.4.9",
     "react": "18.2.0",
     "react-dom": "18.2.0"

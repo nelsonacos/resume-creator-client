@@ -1,0 +1,272 @@
+[
+    {
+        "id": 1,
+        "photo_url": "https://randomuser.me/api/portraits/men/75.jpg",
+        "title": "Full Stack Developer",
+        "personal_data": {
+            "id": 1,
+            "profile_id": 1,
+            "first_name": "Nelson G",
+            "last_name": "Acosta M",
+            "date_of_birth": "1990-05-15",
+            "address": "123 Main Street, City"
+        },
+        "contact_data": {
+            "id": 1,
+            "profile_id": 1,
+            "phone_number": "123-456-7890",
+            "email": "nelson@example.com",
+            "website": "https://nelsonacosta.com",
+            "linkedin": "https://linkedin.com/in/desarrolladorpython",
+            "github": "https://github.com/nelsonacos"
+        },
+        "profile_description": {
+            "id": 1,
+            "profile_id": 1,
+            "summary": "Passionate Full Stack developer with experience in Django and React."
+        },
+        "work_experiences": [
+            {
+                "id": 1,
+                "profile_id": 1,
+                "company": "ABC Company",
+                "company_description": "Software Development Company",
+                "position": "Full Stack Developer",
+                "start_date": "2015-07-01",
+                "end_date": "2020-02-15",
+                "responsibility": "Developing and maintaining web applications.",
+                "achievements": [
+                    "Developed a project management application."
+                ],
+                "skills": [
+                    "Django",
+                    "React",
+                    "JavaScript"
+                ]
+            },
+            {
+                "id": 2,
+                "profile_id": 1,
+                "company": "ABC Company",
+                "company_description": "Software Development Company",
+                "position": "Full Stack Developer",
+                "start_date": "2015-07-01",
+                "end_date": "2020-02-15",
+                "responsibility": "Developing and maintaining web applications.",
+                "achievements": [
+                    "Developed a project management application."
+                ],
+                "skills": [
+                    "Django",
+                    "React",
+                    "JavaScript"
+                ]
+            },
+            {
+                "id": 3,
+                "profile_id": 1,
+                "company": "ABC Company",
+                "company_description": "Software Development Company",
+                "position": "Full Stack Developer",
+                "start_date": "2015-07-01",
+                "end_date": "2020-02-15",
+                "responsibility": "Developing and maintaining web applications.",
+                "achievements": [
+                    "Developed a project management application."
+                ],
+                "skills": [
+                    "Django",
+                    "React",
+                    "JavaScript"
+                ]
+            }
+        ],
+        "education_information": [
+            {
+                "id": 1,
+                "profile_id": 1,
+                "degree": "Bachelor of Science in Computer Engineering",
+                "institution": "XYZ University",
+                "start_date": "2011-09-01",
+                "end_date": "2015-06-30",
+                "description": "University studies in computer engineering and programming."
+            },
+            {
+                "id": 2,
+                "profile_id": 1,
+                "degree": "Bachelor of Science in Computer Engineering",
+                "institution": "XYZ University",
+                "start_date": "2011-09-01",
+                "end_date": "2015-06-30",
+                "description": "University studies in computer engineering and programming."
+            },
+            {
+                "id": 3,
+                "profile_id": 1,
+                "degree": "Bachelor of Science in Computer Engineering",
+                "institution": "XYZ University",
+                "start_date": "2011-09-01",
+                "end_date": "2015-06-30",
+                "description": "University studies in computer engineering and programming."
+            }
+        ],
+        "languages": [
+            {
+                "id": 1,
+                "profile_id": 1,
+                "name": "Spanish",
+                "proficiency": "Native"
+            },
+            {
+                "id": 2,
+                "profile_id": 1,
+                "name": "English",
+                "proficiency": "Intermediate"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "photo_url": "https://example.com/photo2.jpg",
+        "title": "UX/UI Designer",
+        "personal_data": {
+            "id": 2,
+            "profile_id": 2,
+            "first_name": "Mary",
+            "last_name": "Smith",
+            "date_of_birth": "1985-12-10",
+            "address": "456 Secondary Street, City"
+        },
+        "contact_data": {
+            "id": 2,
+            "profile_id": 2,
+            "phone_number": "987-654-3210",
+            "email": "mary@example.com",
+            "website": "https://marysmith.design",
+            "linkedin": "https://linkedin.com/in/marysmith",
+            "github": "https://github.com/marysmith"
+        },
+        "profile_description": {
+            "id": 2,
+            "profile_id": 2,
+            "summary": "User experience designer focusing on intuitive interfaces."
+        },
+        "work_experiences": [
+            {
+                "id": 4,
+                "profile_id": 2,
+                "company": "XYZ Agency",
+                "company_description": "Digital Design Agency",
+                "position": "UX/UI Designer",
+                "start_date": "2013-04-20",
+                "end_date": "2019-11-30",
+                "responsibility": "Creating attractive and functional interfaces for web and mobile applications.",
+                "achievements": [
+                    "Award-winning design in the 2017 web design competition."
+                ],
+                "skills": [
+                    "Adobe XD",
+                    "Sketch",
+                    "InVision"
+                ]
+            }
+        ],
+        "education_information": [
+            {
+                "id": 4,
+                "profile_id": 2,
+                "degree": "Bachelor of Fine Arts in Graphic Design",
+                "institution": "ABC Design School",
+                "start_date": "2008-09-01",
+                "end_date": "2012-06-30",
+                "description": "University studies in graphic design and visual communication."
+            }
+        ],
+        "languages": [
+            {
+                "id": 3,
+                "profile_id": 2,
+                "name": "Spanish",
+                "proficiency": "Native"
+            },
+            {
+                "id": 4,
+                "profile_id": 2,
+                "name": "English",
+                "proficiency": "Fluent"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "photo_url": "https://example.com/photo3.jpg",
+        "title": "Data Analyst",
+        "personal_data": {
+            "id": 3,
+            "profile_id": 3,
+            "first_name": "Charles",
+            "last_name": "Martinez",
+            "date_of_birth": "1988-08-22",
+            "address": "789 Tertiary Street, City"
+        },
+        "contact_data": {
+            "id": 3,
+            "profile_id": 3,
+            "phone_number": "555-123-4567",
+            "email": "charles@example.com",
+            "website": "https://charlesmartinez.info",
+            "linkedin": "https://linkedin.com/in/charlesmartinez",
+            "github": "https://github.com/charlesmartinez"
+        },
+        "profile_description": {
+            "id": 3,
+            "profile_id": 3,
+            "summary": "Data analyst experienced in predictive analysis and statistical modeling."
+        },
+        "work_experiences": [
+            {
+                "id": 5,
+                "profile_id": 3,
+                "company": "Data Insights Co.",
+                "company_description": "Data Analysis Consultancy",
+                "position": "Senior Data Analyst",
+                "start_date": "2012-10-10",
+                "end_date": "2021-05-05",
+                "responsibility": "Analyzing complex data for detailed reports and business predictions.",
+                "achievements": [
+                    "Developed a sales prediction model with 90% accuracy."
+                ],
+                "skills": [
+                    "Python",
+                    "R",
+                    "SQL"
+                ]
+            }
+        ],
+        "education_information": [
+            {
+                "id": 5,
+                "profile_id": 3,
+                "degree": "Master of Science in Statistics",
+                "institution": "University Z",
+                "start_date": "2009-09-01",
+                "end_date": "2012-06-30",
+                "description": "Postgraduate studies in statistics and data analysis."
+            }
+        ],
+        "languages": [
+            {
+                "id": 5,
+                "profile_id": 3,
+                "name": "Spanish",
+                "proficiency": "Native"
+            },
+            {
+                "id": 6,
+                "profile_id": 3,
+                "name": "English",
+                "proficiency": "Advanced"
+            }
+        ]
+    }
+]
