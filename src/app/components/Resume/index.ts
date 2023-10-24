@@ -27,4 +27,6 @@ export {default as ProfileViewInTable} from '@/app/components/Resume/ProfileView
 
 export {useResume} from '@/app/components/Resume/hooks/useResume'
 
+export const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL
+
 

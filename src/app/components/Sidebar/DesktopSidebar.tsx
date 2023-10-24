@@ -1,9 +1,28 @@
 'use client'
+import { useRef, useState } from 'react'
+import { useRouter } from 'next/navigation'
 import { HomeIcon, FormIcon } from '@/app/icons'
-import React, { useRef } from 'react'
+import { startProfile } from '@/app/components/Resume/services'
 
 const DesktopSidebar = () => {
+    const [buttonDisabled, setButtonDisabled] = useState(false);
+    const router = useRouter();
     const sidebarRef = useRef(null)
+
+    const createProfileAndRedirect = async () => {
+        setButtonDisabled(true);
+        try {
+            const profileId = await startProfile();
+            if (profileId) {
+                router.push(`/edit/${profileId}`);
+                return;
+            }
+        } catch (error) {
+            setButtonDisabled(false);
+            console.error('Error al crear el perfil:', error);
+        }
+    };
+
     return (
         <aside
             id="desktopSidebar"
@@ -26,7 +45,7 @@ const DesktopSidebar = () => {
                     </li>
                 </ul>
                 <div className="px-6 my-6">
-                    <button className='inline-flex items-center justify-center px-4 py-2 text-sm font-medium leading-5 text-white align-bottom transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg cursor-pointer focus:outline-none active:bg-purple-600 hover:bg-purple-700 focus:ring focus:ring-purple-300' type='button'>
+                    <button disabled={buttonDisabled} onClick={createProfileAndRedirect} className='inline-flex items-center justify-center px-4 py-2 text-sm font-medium leading-5 text-white align-bottom transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg cursor-pointer focus:outline-none active:bg-purple-600 hover:bg-purple-700 focus:ring focus:ring-purple-300' type='button'>
                         Create profile
                         <span className="ml-2" aria-hidden="true">
                             +
