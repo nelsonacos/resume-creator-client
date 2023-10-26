@@ -1,9 +1,12 @@
-'use client'
 import { ResumeSheet, ResumeSheetForm, SelectTemplateButton, DownloadPdfButton, MoreActionsButton, ResumeStatusView, ResumeSheetNavigation } from '@/app/components/Resume'
-import data from '../../../components/Resume/__mocks__/sample-profiles.json'
-const profile = data[0]
+import { getProfileById } from '@/app/components/Resume/services'
 
-const ProfilePage = () => {
+interface Params {
+    id: string;
+}
+
+const ProfilePage = async ({ params }: { params: Params }) => {
+    const profile = await getProfileById(parseInt(params.id))
     return (
         <div className="grid grid-cols-2 gap-1">
             <div className='w-full p-10'>

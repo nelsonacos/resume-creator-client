@@ -48,3 +48,30 @@ export const startProfile = async () => {
         console.error('Error al crear el perfil:', error);
     }
 }
+
+export const getProfileById = async (profileId: number): Promise<Profile> => {
+  try {
+    const response = await fetch(`${API_BASE_URL}/resume/api/v1/profiles/${profileId}/`, {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+
+    if (!response.ok) {
+      // Handle API errors
+      const errorMessage = await response.text();
+      throw new Error(`Error: ${errorMessage}`);
+    }
+
+    return await response.json();
+  } catch (error) {
+    if (error instanceof Error) {
+      // Type checking for 'error'
+          throw new Error(`Error: ${error.message}`);
+      } else {
+      // Handle other error types here
+          throw new Error(`Error: ${error}`);
+      }
+  }
+};
